@@ -7,7 +7,7 @@ def minutes_elapsed():
     return (time.time() - psutil.boot_time())/60
 
 
-#if grater then 3 days reboot
+#if greater then 3 days reboot
 while True:
     time.sleep(60)
     if minutes_elapsed() >= 4320:
